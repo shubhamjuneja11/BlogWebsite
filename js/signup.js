@@ -15,7 +15,6 @@ $(document).ready(function () {
             },
             password2: {
                 required: true,
-                minlength: 6,
                 equalTo:"#password"
 
             }
@@ -27,9 +26,9 @@ $(document).ready(function () {
             error.addClass('message');  // add a class to the wrapper
             error.css('position', 'absolute');
             //error.css('left', offset.left + element.outerWidth());
-            error.css('left', offset.left );
+            error.css('left', offset.left-40 );
 
-            error.css('top', offset.top);
+            error.css('top', offset.top-10);
 
     },
 
@@ -37,12 +36,17 @@ $(document).ready(function () {
 
         messages: {
               username: "Please enter your username",
-              email: "Please enter your email",
+              email: {
+                required:"Please enter your email",
+                email:"Not a valid email id"
+
+            },
               password: {
                 required: "Please provide a password",
                 minlength: "Your password must be at least 6 characters long"
               },
               password2: {
+                required: "Please re-type your password",
                 equalTo:"Password doesn't match"
               }
             },

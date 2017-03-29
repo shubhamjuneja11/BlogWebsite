@@ -11,6 +11,12 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 	$username=$_POST["username"];
 	$email=	   $_POST["email"];
 	$password=$_POST["password"];
+
+$query="insert into user (username,email,password) values('$username','$email','$password')";
+
+	$res=mysqli_query($con,$query) or die(mysqli_error($con));
+	echo $res;
+
 	
 }
 }

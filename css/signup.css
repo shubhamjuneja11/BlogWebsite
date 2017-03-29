@@ -16,7 +16,7 @@ body {
 #login-box {
   position: relative;
   margin: 5% auto;
-  width: 800px;
+  width: 600px;
   height: 400px;
   background: #FFF;
   border-radius: 2px;
@@ -164,15 +164,16 @@ button.social-signin.google {
 
 .message{
     height: 20px;
-    font-size: 14px;
-    text-decoration-color:#924949 
+    font-weight:italic;
+    font-size: 10px;
+    text-decoration-color:#924949 ;
     /*background: transparent url("../images/msg_arrow.gif") no-repeat scroll left center;*/
     padding-left: 7px;
     display: block;
     color:red;
 }
 
-.error{font-color:#924949;
+.error{
     /*background-color:#F3E6E6;
     border-color: #924949;
     border-style: solid solid solid none;
