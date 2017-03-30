@@ -5,13 +5,25 @@
 </head>
 <body>
 <link rel="stylesheet" type="text/css" href="../css/signup.css">
+<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAXv88Bhg1JJRrk5rCcerCZGGmp0C6IZTk",
+    authDomain: "chat-6c23a.firebaseapp.com",
+    databaseURL: "https://chat-6c23a.firebaseio.com",
+    storageBucket: "chat-6c23a.appspot.com",
+    messagingSenderId: "912131852564"
+  };
+  firebase.initializeApp(config);
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 
 
 
 <script type="text/javascript" src="../js/signup.js"></script>
-<form action="../php/signup.php" method="POST" id="myform">
+<!--<form action="../php/signup.php" method="POST" id="myform">-->
 <div id="login-box">
   <div class="left">
     <h1>Sign up</h1>
@@ -28,12 +40,12 @@
     <span class="loginwith">Sign in with<br />social network</span>
     
     <button class="social-signin facebook">Log in with facebook</button>
-    <button class="social-signin twitter">Log in with Twitter</button>
-    <button class="social-signin google">Log in with Google+</button>
+    <button class="social-signin twitter" >Log in with Twitter</button>
+    <button class="social-signin google" id='googlesignin'  >Log in with Google+</button>
   </div>
   <div class="or">OR</div>
 </div>
-</form>
+<!--</form>-->
 
 </body>
 </html>
